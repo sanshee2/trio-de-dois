@@ -1,0 +1,13 @@
+COISAS PARA AMANHÃ:
+
+#Criar a função jogo, que funcionará para cada player;
+#Criar uma função que vai estilizar o jogo de acordo com o player;
+
+#Criar um estilo genérico para o tabuleiro e para o background para ser modificado pelo script.
+
+
+
+*dividir em 3?
+  =>  Adicionar três tabuleiros, um sendo server e dois sendo os players.
+      Cada um refletindo no outro.
+  *começo de implementação do modo online.

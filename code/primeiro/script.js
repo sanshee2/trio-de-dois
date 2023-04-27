@@ -7,6 +7,9 @@ function handleMove(square) {
     square.innerText = player;
     checkForWin();
     player = player === 'X' ? 'O' : 'X';
+    
+    
+    
   }
 }
 
@@ -28,9 +31,9 @@ function checkForWin() {
       squares[a].innerText === squares[b].innerText &&
       squares[a].innerText === squares[c].innerText
     ) {
-      alert(`Player ${player} wins!`);
-      gameOver = true;
-      return;
+      player = player === 'X' ? 'O' : 'X'
+      setTimeout(ganhou, 250);
+      
     }
   }
 }
@@ -40,3 +43,9 @@ squares.forEach((square) => {
     handleMove(square);
   });
 });
+
+function ganhou(){
+  gameOver = true;
+  alert(`player ${player} ganhou`);
+  return;
+}

@@ -1,11 +1,11 @@
 
 body {
     font-family: 'inter';
-	background-color: aquamarine;
+	background-color: #ccc;
 }
 
 
-#board {
+.board {
     display: flex;
     flex-wrap: wrap;
     width: 325px;
@@ -55,6 +55,7 @@ body {
     background-color: #c0c0c0;
 	border-radius: 0.5rem;
 	max-width: 325px;
+	text-align: center;
 	
 }
 

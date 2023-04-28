@@ -7,34 +7,60 @@
     </head>
     <body>
 		<section class="tabela">
-        <section class="jogo">
+			<section class="jogo">
+				<div class="login">
+					<input type="text" placeholder="seu nome" class="login__input">
+					<button type="submit" class="login__button" >Entrar</button>
+				</div>
+					
+				<div class="tabuleiro">
+
+				<div class="board" >
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+				</div>
+
+				<div class="login">
+					<input type="text" placeholder="seu nome" class="login__input">
+					<button type="submit" class="login__button" disabled>Entrar</button>
+				</div>				
+
+				</div>
+
+				<button type="submit" class="login__button" >REINICIAR</button>
+
+			</section>
+
+			<div class="tabuleiro">
+				<div class="board" >
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+				</div>
+			</div>
 			
-        <div class="tabuleiro">
-            <h1 class="jogo__titulo"># JOGO DA VELHA</h1>
-			<p>Vitórias do Azul: 0 | Vitórias do Vermelho: 0</p>
-        <div id="board" >
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
+			<div>
+				<h1 class="jogo__titulo"># JOGO DA VELHA</h1>
+				<p>Vitórias do Azul: 0 | Vitórias do Vermelho: 0</p>
+					<div>Vitórias</div>
+					<div>Jogador 1: 0 | Jogador 2: 0</div>
+				<br>
+			</div>
+			</section>
 
-
-        </div>
-
-		<div class="login">
-			<input type="text" placeholder="seu nome" class="login__input">
-			<button type="submit" class="login__button" disabled>Entrar</button>
-		</div>
-		</div>
-		
-        </section>
-		<p>Vitórias do Azul: 0 | Vitórias do Vermelho: 0</p>
-		</section>
         <script src="script.js"></script>
 
   </body>

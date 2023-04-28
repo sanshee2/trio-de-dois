@@ -32,7 +32,7 @@ function checkForWin() {
       squares[a].innerText === squares[c].innerText
     ) {
       player = player === 'X' ? 'O' : 'X'
-      setTimeout(ganhou, 250);
+      setTimeout(ganhou, 25);
       
     }
   }

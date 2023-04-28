@@ -3,19 +3,14 @@ let player = 'X';
 let gameOver = false;
 
 function handleMove(square) {
-  if (gameOver == true) {
-    alert(`Player ${player} wins!`);
-  }
-
   if (!gameOver && square.innerText === '') {
-    
     square.innerText = player;
     checkForWin();
     player = player === 'X' ? 'O' : 'X';
     
-  }  
-  
-
+    
+    
+  }
 }
 
 function checkForWin() {
@@ -36,19 +31,21 @@ function checkForWin() {
       squares[a].innerText === squares[b].innerText &&
       squares[a].innerText === squares[c].innerText
     ) {
-      gameOver = true;
-      return;
+      player = player === 'X' ? 'O' : 'X'
+      setTimeout(ganhou, 250);
+      
     }
-  } 
-} 
+  }
+}
 
 squares.forEach((square) => {
-  
   square.addEventListener('click', () => {
-    checkForWin();
     handleMove(square);
+  });
+});
 
-  } ) ;
-
-} ) ; 
-
+function ganhou(){
+  gameOver = true;
+  alert(`player ${player} ganhou`);
+  return;
+}

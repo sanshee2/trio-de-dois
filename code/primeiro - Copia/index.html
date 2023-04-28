@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Jogo da Velha</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Jogo da Velha</h1>
-    <div id="board">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-    <script src="script.js"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Jogo da Velha</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+		<section class="tabela">
+        <section class="jogo">
+			
+        <div class="tabuleiro">
+            <h1 class="jogo__titulo"># JOGO DA VELHA</h1>
+			<p>Vitórias do Azul: 0 | Vitórias do Vermelho: 0</p>
+        <div id="board" >
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+
+
+        </div>
+
+		<div class="login">
+			<input type="text" placeholder="seu nome" class="login__input">
+			<button type="submit" class="login__button" disabled>Entrar</button>
+		</div>
+		</div>
+		
+        </section>
+		<p>Vitórias do Azul: 0 | Vitórias do Vermelho: 0</p>
+		</section>
+        <script src="script.js"></script>
+
   </body>
 </html>

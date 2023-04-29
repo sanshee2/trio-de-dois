@@ -7,7 +7,9 @@ function handleMove(square) {
     square.innerText = player;
     checkForWin();
     player = player === 'X' ? 'O' : 'X';
-
+    
+    
+    
   }
 }
 
@@ -24,12 +26,10 @@ function checkForWin() {
   ];
   for (let i = 0; i < winningConditions.length; i++) {
     const [a, b, c] = winningConditions[i];
-    console.log(squares.innerText);
     if (
       squares[a].innerText &&
       squares[a].innerText === squares[b].innerText &&
       squares[a].innerText === squares[c].innerText
-      
     ) {
       player = player === 'X' ? 'O' : 'X'
       setTimeout(ganhou, 25);

@@ -1,10 +1,27 @@
 const squares = document.querySelectorAll('.square');
+const square = document.querySelector('.square');
 let player = 'X';
 let gameOver = false;
+
+
+var corX = '#a52a2a'
+var corO = '#4682B4'
+
+
+const tabuleiro = document.querySelector('.tabuleiro');
+const board = document.querySelector('.board');
+const button = document.querySelector('.reiniciar__button');
 
 function handleMove(square) {
   if (!gameOver && square.innerText === '') {
     square.innerText = player;
+    if (player == 'X') {
+      square.style.backgroundColor = corX;
+      square.style.color = '#f5f5f5'
+    } else {
+      square.style.backgroundColor = corO;
+      square.style.color = '#f5f5f5'
+    }
     checkForWin();
     player = player === 'X' ? 'O' : 'X';
 
@@ -45,7 +62,18 @@ squares.forEach((square) => {
 });
 
 function ganhou(){
+  if (gameOver = false) {
+    button.setAttribute('disabled', '');
+  }
   gameOver = true;
   alert(`player ${player} ganhou`);
+  button.removeAttribute('disabled');
+  board.classList.add('tabuleiro__virar');
+
+
   return;
+}
+
+function recarregarAPagina(){
+  window.location.reload();
 }

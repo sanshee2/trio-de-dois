@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <title>Jogo da Velha</title>
-        <link rel="stylesheet" href="style.css" />
-		<link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
-		<link rel="manifest" href="./icon/site.webmanifest">
+      <meta charset="UTF-8" />
+      <title>Jogo da Velha</title>
+      <link rel="stylesheet" href="style.css" />
+
+      <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+      <link rel="manifest" href="./icon/site.webmanifest">
+
+      <script defer src="script.js"></script>
 
     </head>
 
@@ -24,12 +27,12 @@
 				<a class="cabecalho__menu_link" href="login.html">fazer login</a>
 			</nav>
 		</header>
-
+    
 		<section class="tabela">	
 			<section class="jogo">
 				<h1 class="jogo__titulo"># JOGO DA VELHA</h1>
 			<div class="tabuleiro">
-				<div class="board" >
+				<div class="board">
 					<div class="square"></div>
 					<div class="square"></div>
 					<div class="square"></div>
@@ -40,9 +43,10 @@
 					<div class="square"></div>
 					<div class="square"></div>
 				</div>
-				<button type="submit" class="reiniciar__button" disabled>REINICIAR</button>
+				<button type="button" onclick="recarregarAPagina()" class="reiniciar__button" disabled>Reiniciar</button>
+
 			</div>
-			
+
 			
 			<div>
 				<p>Vitórias do Azul: 0 | Vitórias do Vermelho: 0</p>
@@ -54,10 +58,13 @@
 		</section>
 
 		<footer class="rodape">
-			<p>Desenvolvido por um trio de dois, <strong><a href="https://github.com/sanshee2">Gabriel Lima</a></strong> e <strong><a href="https://github.com/imparcialista">Lucas Araujo.</a></strong> Estudando os cursos da <strong><a href="https://www.alura.com.br">Alura</a></strong> e alguns outros pela internet.</p>
+			<p>Desenvolvido por um trio de dois, 
+        <strong><a href="https://github.com/sanshee2">Gabriel Lima</a>
+        </strong> e <strong><a href="https://github.com/imparcialista">Lucas Araujo.</a>
+        </strong> Estudando os cursos da <strong><a href="https://www.alura.com.br">Alura</a>
+        </strong> e alguns outros pela internet.</p>
 		</footer>
-        <script src="script.js"></script>
-		
+
 
   </body>
 </html>
